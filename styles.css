@@ -85,7 +85,7 @@ a {
 }
 
 .hero-media img {
-  width: 168%;
+  width: 100%;
   height: 100%;
   max-width: none;
   object-fit: cover;
