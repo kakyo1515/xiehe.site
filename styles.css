@@ -309,6 +309,38 @@ p {
   padding: 18px 0;
 }
 
+.news-list {
+  max-width: 980px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 26px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-list.featured {
+  margin-bottom: 26px;
+}
+
+.news-list time {
+  color: var(--teal-dark);
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.news-list p {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .pub-title {
   font-weight: 700;
 }
@@ -370,6 +402,13 @@ a.pub-title {
 }
 
 .publication-section h2 {
+  margin: 0 0 20px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  letter-spacing: 0;
+}
+
+.news-section h2 {
   margin: 0 0 20px;
   font-family: "Source Serif 4", Georgia, serif;
   font-size: clamp(1.8rem, 3vw, 2.8rem);
@@ -525,6 +564,7 @@ a.pub-title {
   .intro-grid,
   .split,
   .publication-list li,
+  .news-list li,
   .semester-grid {
     grid-template-columns: 1fr;
   }
@@ -548,8 +588,10 @@ a.pub-title {
 
   .nav {
     width: 100%;
+    gap: 10px;
     overflow-x: auto;
     padding-bottom: 2px;
+    font-size: 0.86rem;
   }
 
   .hero {
