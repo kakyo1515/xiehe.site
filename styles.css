@@ -235,6 +235,15 @@ p {
   font-weight: 600;
 }
 
+.facts ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.facts li + li {
+  margin-top: 8px;
+}
+
 .research-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
